@@ -6,8 +6,8 @@ import DesignPatterns.model.*;
 public class Biblioteca_Universitaria {
     public static void main(String[] args) {
         // Padrão Observer
-        Aluno aluno1 = new Aluno("Alice");
-        Aluno aluno2 = new Aluno("Bob");
+        Aluno aluno1 = new Aluno("Catarina");
+        Aluno aluno2 = new Aluno("Pedro");
 
         Biblioteca biblioteca = new Biblioteca();
         biblioteca.adicionarObservador(aluno1);
