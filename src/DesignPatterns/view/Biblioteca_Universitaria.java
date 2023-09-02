@@ -14,13 +14,28 @@ public class Biblioteca_Universitaria {
         biblioteca.adicionarObservador(aluno2);
 
         // Registrando livros
-        Livro livro1 = new Livro("Design Patterns com Java", "Autor 1", "ISBN1", 3);
-        Livro livro2 = new Livro("Java Programming", "Autor 2", "ISBN2", 5);
+        Livro livro1 = new Livro("Design Patterns", "Erich Gamma", "ISBN 978 – 85 – 333 – 0227 – 3", 1);
+        Livro livro2 = new Livro("Spring Boot", "Fernando Boaglio", "ISBN 978 – 85 – 333 – 0227 – 4", 1);
         biblioteca.adicionarLivro(livro1);
         biblioteca.adicionarLivro(livro2);
 
-        biblioteca.emprestarLivro("Design Patterns com Java", "Alice");
-        biblioteca.devolverLivro("Design Patterns com Java");
+        // Empréstimo de livros
+        biblioteca.emprestarLivro("Design Patterns", "Catarina");
+        System.out.println(aluno1.getNome() + " pegou o livro Design Patterns emprestado");
+        System.out.println(livro1);
+
+        biblioteca.emprestarLivro("Spring Boot", "Pedro");
+        System.out.println(aluno2.getNome() + " pegou o livro Spring Boot emprestado");
+        System.out.println(livro2);
+
+        // Devolução de livros
+        biblioteca.devolverLivro("Design Patterns");
+        System.out.println(aluno1.getNome() + " devolveu o livro Design Patterns");
+        System.out.println(livro1);
+
+        biblioteca.devolverLivro("Spring Boot");
+        System.out.println(aluno2.getNome() + " devolveu o livro Spring Boot");
+        System.out.println(livro2);
 
         // Padrão Strategy
         EstrategiaPrioridadeTarefa estrategiaAltaPrioridade = new EstrategiaAltaPrioridade();

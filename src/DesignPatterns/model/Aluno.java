@@ -11,4 +11,8 @@ public class Aluno implements Observador {
     public void atualizar(String mensagem) {
         System.out.println(nome + ": " + mensagem);
     }
+
+    public String getNome() {
+        return nome;
+    }
 }
