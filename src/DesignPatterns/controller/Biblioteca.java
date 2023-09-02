@@ -6,7 +6,7 @@ import DesignPatterns.model.Observador;
 import java.util.ArrayList;
 import java.util.List;
 
-//Controller da Aplicação
+// Controller da Aplicação
 public class Biblioteca {
     private List<Observador> observadores = new ArrayList<>();
     private List<Livro> livros = new ArrayList<>();

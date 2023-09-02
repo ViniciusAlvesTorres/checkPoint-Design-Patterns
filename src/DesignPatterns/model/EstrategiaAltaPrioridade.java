@@ -6,4 +6,3 @@ public class EstrategiaAltaPrioridade implements EstrategiaPrioridadeTarefa {
         System.out.println("Executando tarefa com alta prioridade: " + tarefa);
     }
 }
-

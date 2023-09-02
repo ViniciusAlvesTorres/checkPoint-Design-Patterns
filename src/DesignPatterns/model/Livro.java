@@ -30,4 +30,14 @@ public class Livro {
     public void devolver() {
         quantidadeDisponivel++;
     }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", quantidadeDisponivel=" + quantidadeDisponivel +
+                '}';
+    }
 }
