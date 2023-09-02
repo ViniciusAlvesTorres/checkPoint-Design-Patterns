@@ -19,4 +19,5 @@ O pacote view contém a classe Biblioteca_Universitaria, que serve como o ponto 
 
 # Como Executar
 Para executar a aplicação, você pode utilizar uma IDE Java, como o IntelliJ IDEA ou o Eclipse. Basta criar um novo projeto Java e importar os arquivos do repositório. Em seguida, execute a classe Biblioteca_Universitaria como um programa Java para ver os padrões de design em ação.
+O programa mostrará mensagens no console indicando quando um aluno empresta um livro, quando um aluno devolve um livro e a lista de livros disponíveis na biblioteca.
 
